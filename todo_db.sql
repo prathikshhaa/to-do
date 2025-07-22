@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2025 at 05:04 PM
+-- Generation Time: Mar 31, 2025 at 03:15 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,6 +34,15 @@ CREATE TABLE `todo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `todo`
+--
+
+INSERT INTO `todo` (`id`, `name`, `status`) VALUES
+(20, 'drink water', 0),
+(21, 'go for a walk', 1),
+(22, 'read a book', 0);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -51,7 +60,7 @@ ALTER TABLE `todo`
 -- AUTO_INCREMENT for table `todo`
 --
 ALTER TABLE `todo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
